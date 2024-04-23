@@ -2,10 +2,10 @@ package go_tf_idf
 
 import (
 	"errors"
-	"github.com/shubham216/go_tf_idf/knn"
-	"github.com/shubham216/go_tf_idf/ngrams"
-	"github.com/shubham216/go_tf_idf/similarityMetrics"
-	"github.com/shubham216/go_tf_idf/tfidf"
+	"github.com/shubhamraj216/go-tf-idf/knn"
+	"github.com/shubhamraj216/go-tf-idf/ngrams"
+	"github.com/shubhamraj216/go-tf-idf/similarityMetrics"
+	"github.com/shubhamraj216/go-tf-idf/tfidf"
 	"strings"
 )
 

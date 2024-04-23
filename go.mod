@@ -1,3 +1,3 @@
-module github.com/shubham216/go_tf_idf
+module github.com/shubhamraj216/go-tf-idf
 
 go 1.21

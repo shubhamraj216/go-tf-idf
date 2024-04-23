@@ -2,7 +2,7 @@ package go_tf_idf
 
 import (
 	"fmt"
-	"github.com/shubham216/go_tf_idf/similarityMetrics"
+	"github.com/shubhamraj216/go-tf-idf/similarityMetrics"
 )
 
 func getClosestMatch() {

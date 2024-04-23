@@ -1,6 +1,6 @@
 package knn
 
-import "github.com/shubham216/go_tf_idf/similarityMetrics"
+import "github.com/shubhamraj216/go-tf-idf/similarityMetrics"
 
 func NewNearestNeighbors(k int, similarityMetric similarityMetrics.SIMILARITY_CHECK_METRIC) *NearestNeighbors {
 	return &NearestNeighbors{
