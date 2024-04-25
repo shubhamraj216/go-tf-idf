@@ -62,7 +62,7 @@ func (v *TfidfVectorizer) Transform(text string) []float64 {
 	// Calculate TF-IDF
 	for ngram, freq := range wordFreq {
 		if idx, ok := v.Vocabulary[ngram]; ok {
-			tf := float64(freq) / float64(maxFrequency)
+			tf := float64(freq) / float64(len(ngram))
 			idf := math.Log(float64(len(v.Vocabulary)) / float64(v.MinDF))
 			tfidfVector[idx] = tf * idf
 		}

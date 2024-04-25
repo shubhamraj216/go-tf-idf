@@ -3,7 +3,6 @@ package ngrams
 import "regexp"
 
 func CalculateNGrams(str string, n int) []string {
-	n = 1
 	// Remove punctuation from the string
 	reg, _ := regexp.Compile(`[,-./]|\sBD`)
 	str = reg.ReplaceAllString(str, "")

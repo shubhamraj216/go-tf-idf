@@ -10,12 +10,12 @@ type EuclideanConfidence struct{}
 func (EuclideanConfidence) GetConfidenceScore(queryVector []float64, instances [][]float64) []Confidence {
 	confidence := make([]Confidence, len(instances))
 	for i, instance := range instances {
-		confidence[i].ConfidenceScore = 1.0 - euclideanDistance(queryVector, instance)
+		confidence[i].ConfidenceScore = euclideanDistance(queryVector, instance)
 		confidence[i].Index = i
 	}
 
 	sort.SliceStable(confidence, func(i, j int) bool {
-		return confidence[i].ConfidenceScore > confidence[j].ConfidenceScore
+		return confidence[i].ConfidenceScore < confidence[j].ConfidenceScore
 	})
 
 	return confidence
